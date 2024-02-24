@@ -17,6 +17,7 @@ Find out more at https://www.diymachines.co.uk
 
 Also many thanks go to :
 Rui Santos ( https://RandomNerdTutorials.com/esp32-cam-projects-ebook/ )
+
 Simone (https://eloquentarduino.com) 
 
 for all their excellent tutorials and code examples.
