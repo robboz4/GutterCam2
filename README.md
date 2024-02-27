@@ -5,7 +5,7 @@ The original code used the camera code available in the library pack that suppor
 The GutterCam was designed for a friend who can no longer climb ladders to check out his guttters on a 2 story house. He has leafguard installed, but still
 likes to check they are working and the lcoal wild life haven't build new condos up there (Squirrels!).
 The original code was  accessed via the home WiFi to the webserver on the board. From a browser you had to start the video stream. This new code is an AP 
-and my friend just has to point his smart phone/tablet/PC to GutterCam2 and a browser browser to 192.168.4.1.  Much easier for him to use.
+and my friend just has to point his smart phone/tablet/PC to GutterCam2 and a browser browser to 192.168.4.1.  Much easier for him to use. There is also a single button to turn on/off the flash LED. 
 
 The code was a modification of the code used in this project:
 
@@ -23,7 +23,7 @@ Simone (https://eloquentarduino.com)
 for all their excellent tutorials and code examples.
 
 I have also posted the 3d files I created to make the GutterCam2. The camera case is WIP, but does work. You just need to add or design a fixing
-mechanism to attach  the GutterCam2 to a pole you might use. I used duct tape for the test! My friend has an elegant thrraded attachment.
+mechanism to attach  the GutterCam2 to a pole you might use. I used duct tape for the test! My friend has an elegant threaded attachment.
 
 I also added a USB charger for the 18650 battery I used to power the it. Here's an example from Amazon:
 
