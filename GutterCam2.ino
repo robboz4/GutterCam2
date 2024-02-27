@@ -166,6 +166,14 @@ static const char PROGMEM INDEX_HTML[] = R"rawliteral(
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body { font-family: Arial; text-align: center; margin:0px auto; padding-top: 30px;}
+#flashButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: green;
+      color: Black;
+      border: none;
+      cursor: pointer;
+    }      
       background {rgb(2,0,36);}
       background {linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(33,121,9,1) 9%, rgba(0,212,255,1) 69%);}
       table { margin-left: auto; margin-right: auto; }
@@ -198,19 +206,33 @@ static const char PROGMEM INDEX_HTML[] = R"rawliteral(
   <body>
     <h1>Live View Gutter</h1>
     <h3>(DIYMachines.co.uk & ClubRobbo)</h3>
-    <h4>(2.2)</h4>
+    <h4>(2.3)</h4>
     <img src="" id="photo" >
     <table>
      <tr>
-        <td align="center"><button class="button" onmousedown="toggleCheckbox('flash-on');" ontouchstart="toggleCheckbox('flash-on');" onmouseup="toggleCheckbox('flash-on');" ontouchend="toggleCheckbox('flash-on');">Flash On</button></td>
-        <td align="center"><button class="button" onmousedown="toggleCheckbox('flash-off');" ontouchstart="toggleCheckbox('flash-off');" onmouseup="toggleCheckbox('flash-off');" ontouchend="toggleCheckbox('flash-off');">Flash Off</button></td>
-       
+     <!-- 
+      <td align="center"><button id="flashButton" class="button" onmousedown="toggleCheckbox('flash-on');" ontouchstart="toggleCheckbox('flash-on');" onmouseup="toggleCheckbox('flash-on');" ontouchend="toggleCheckbox('flash-on');">Flash On</button></td>
+      <td align="center"><button class="button" onmousedown="toggleCheckbox('flash-off');" ontouchstart="toggleCheckbox('flash-off');" onmouseup="toggleCheckbox('flash-off');" ontouchend="toggleCheckbox('flash-off');">Flash Off</button></td>
+      -->  
+      <td align="center"> <button id="flashButton" onclick="toggleCheckbox('flash-on')">flash-on</button> </td>
+    
       </tr> 
                       
     </table>
+   
    <script>
    function toggleCheckbox(x) {
      var xhr = new XMLHttpRequest();
+    var button = document.getElementById('flashButton');
+    if (button.innerHTML === 'flash-on') {
+      button.innerHTML = 'flash-off';
+      button.style.backgroundColor = 'Lime';
+      x="flash-on";
+    } else {
+      button.innerHTML = 'flash-on';
+      button.style.backgroundColor = 'Green';
+      x="flash-off";      
+    } 
      xhr.open("GET", "/action?go=" + x, true);
      xhr.send();
    }
