@@ -23,7 +23,7 @@ Simone (https://eloquentarduino.com)
 for all their excellent tutorials and code examples.
 
 I have also posted the 3d files I created to make the GutterCam2. The camera case is WIP, but does work. You just need to add or design a fixing
-mechanism to attach  the GutterCam2 to a pole you might use. I used duct tape for the test! My friend has an elegant threaded attachment.
+mechanism to attach  the GutterCam2 to a pole you might use. I used duct tape for the test! My friend has an elegant threaded attachment. See the Pole fix pictures in the image folder.
 
 I also added a USB charger for the 18650 battery I used to power the it. Here's an example from Amazon:
 
